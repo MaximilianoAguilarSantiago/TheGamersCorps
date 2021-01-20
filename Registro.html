@@ -1,0 +1,75 @@
+<!DOCTYPE html><!--Funcion que permitr dar inicio a un documento HTML-->
+<html>
+<head> <!--Inicio de la cabecera de la pagina-->
+    <title>Formulario</title>
+    <meta charset="utf-8"> <!--Atributo destinado a indicar codificaciones que se utilizan-->
+
+    <!--Atributo que permite trabajar el documento en el navegador-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <!--Atributos los cuales vincularan los documentos HTML con los CSS para dar diseño a la pagina-->
+    <link rel="stylesheet" href="css/EstIndex.css">
+    <link rel="stylesheet" href="css/EfectoGaleria.css">
+    <link rel="stylesheet" href="css/EstiloMenu.css">
+    <link type="text/css" href="css/EstiloRegistro.css" rel="stylesheet" />
+</head> <!--Cierre del encabezado de la pagina-->
+
+<body> <!--Cuerpo de la pagina-->
+
+  <ul class="BarraMenu mydiv animate-bg"> <!--Este atributo se establecera como la barra de menus para ir seleccionando-->
+  <li><h1 class="Enc1 TextCabz1">The Gamers Corp.</h1></li> <!--Funcion la cual sera el encabezado que contendra el nombre de la pagina-->
+  <li><a href="index.html">Inicio</a></li> <!--El siguiente encabezado sera el indice principal de la pagina-->
+  <li><a href="Registro.html">Registro</a></li> <!--Para este encabezado sera el registro de los clientes en la pagina-->
+  <li><a href="Tienda.html">Tienda</a></li> <!--Este encabezado sera para la tienda la cual nos muestra los juegos de cada consola-->
+  <li><a href="Noticias.html">Noticias</a></li> <!--Y por ultimo este encabezado es una seccion de noticias-->
+  <li><a href="Consultas.php">Consultas</a></li> <!--Para esta funcion se dara acciones para la manipulacion de la cuenta-->
+  <li><p class="Eslo">"Tu llevas el mando"</p></li> <!--Para este encabezado es una frase la cual caracteriza a la pagina-->
+  </ul> <!--Cierre de la barra de menus-->
+
+
+<br> <!--COntenedores los cuales seran encargados de dar forma a la ventana del formulario-->
+    <div id="envoltura">
+    <div id="contenedor">
+    <div id="cabecera">REGISTRO DE CLIENTES</div>
+    <div id="cuerpo">
+
+<!--Identificador de formulario con accion de carga en una base de datos-->
+    <form id="formulario" action="php/CargarDatos.php" method="POST" name="formulario">
+<!--Panel el cual estara dirigido a complementar con el nombre del usuario-->
+    <p><label for="nombre">Nombre:</label></p>
+    <input name="usuario" type="text" id="nombre" class="nombre" placeholder="Pon tu nombre"></p>
+<!--Panel el cual estara dirigido a complementar con el apellido del usuario-->
+    <p><label for="apellidos">Apellidos:</label></p>
+    <input name="apellido" type="text" id="apellidos" placeholder="Pon tus apellidos" ></p>
+<!--Panel el cual estara dirigido a complementar con el correo del usuario-->
+    <p><label for="correo">Correo:</label></p>
+    <input name="correos" type="text" id="correo"placeholder="Pon tu mail" ></p>
+<!--Panel el cual estara dirigido a complementar con la contraseña del usuario-->
+    <p><label for="pass">Password:</label></p>
+    <input name="pass" type="password" id="contra" placeholder="Pon tu contraseña"  ></p>
+<!--Panel en cual nos indica quye debemos colocar denuevo la contraseña-->
+    <p><label for="repass">Repetir Password:</label></p>
+    <input name="repass" type="password" id="contra2" placeholder="Repite contraseña" /></p>
+    <br>
+    <textarea name="comentarios" rows="7" cols="30" placeholder="Escribe aquí tus comentarios"></textarea>
+<!--Panel encargado de guardar todos los datos en la base de datos creada-->
+    <p id="bot"><input name="EnviarDatos" type="submit" id="boton" value="Registrar" class="boton" ></p>
+    </form>
+    </div>
+
+    <div id="pie">¡Bienvenido, estamos a sus ordenes!</div> <!--Creacion de un contenedor con un mensaje-->
+    </div><!-- fin contenedor -->
+
+    </div>
+
+<div class=""> <!--Creacon de un contenerdor-->
+  <ul class="error contenedor" id="error">Notas</ul> <!--Advertencia del regustro de los datos-->
+</div> <!--Cierre del contenerdort-->
+
+<!--Vinculos de archivos HTML con los JS-->
+<script src="js/Validaciones.js"></script>
+<script type="text/javascript"></script>
+
+</body> <!--Cierre del cuerpo de la pagina-->
+
+</html> <!--Cierre del documento HTML-->

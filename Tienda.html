@@ -1,0 +1,72 @@
+<!DOCTYPE html><!--Funcion que permitr dar inicio a un documento HTML-->
+<html>
+
+<head> <!--Inicio de la cabecera de la pagina-->
+
+  <!--Atributo que permite trabajar el documento en el navegador-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+  <!--Atributos los cuales vincularan los documentos HTML con los CSS para dar diseño a la pagina-->
+<link href="css/EstiloTienda.css" rel="stylesheet">
+<link rel="stylesheet" href="css/EstIndex.css">
+<link rel="stylesheet" href="css/EfectoGaleria.css">
+<link rel="stylesheet" href="css/EstiloMenu.css">
+<title>Tienda</title> <!--Titulo que recibe la pagina-->
+</head> <!--Cierre del encabezado de la pagina-->
+
+<body> <!--Cuerpo de la pagina-->
+
+  <ul class="BarraMenu mydiv animate-bg"> <!--Este atributo se establecera como la barra de menus para ir seleccionando-->
+  <li><h1 class="Enc1 TextCabz1">The Gamers Corp.</h1></li> <!--Funcion la cual sera el encabezado que contendra el nombre de la pagina-->
+  <li><a href="index.html">Inicio</a></li> <!--El siguiente encabezado sera el indice principal de la pagina-->
+  <li><a href="Registro.html">Registro</a></li> <!--Para este encabezado sera el registro de los clientes en la pagina-->
+  <li><a href="Tienda.html">Tienda</a></li> <!--Este encabezado sera para la tienda la cual nos muestra los juegos de cada consola-->
+  <li><a href="Noticias.html">Noticias</a></li> <!--Y por ultimo este encabezado es una seccion de noticias-->
+  <li><a href="Consultas.php">Consultas</a></li> <!--Para esta funcion se dara acciones para la manipulacion de la cuenta-->
+  <li><p class="Eslo">"Tu llevas el mando"</p></li> <!--Para este encabezado es una frase la cual caracteriza a la pagina-->
+  </ul> <!--Cierre de la barra de menus-->
+
+
+<section class="column menu"> <!--Seccion creada para el menu de botones para las consolas-->
+<h1 class="OP">CONSOLAS</h1> <!--Titulo de la seccionde las consolas-->
+  <pre>
+    <button class="BX" type="button" id="XB"> XBOX </button> <!--Boton creado con accion para mandar llamar un recuadro de juegos de xbox-->
+    <button class="BP" type="button" id="PS"> PLAYSTATION </button> <!--Boton creado con accion para mandar llamar un recuadro de juegos de playstation-->
+    <button class="BN" type="button" id="NS"> NINTENDO SWITCH </button> <!--Boton creado con accion para mandar llamar un recuadro de juegos de nintendo-->
+  </pre>
+</section> <!--Cierre de la seccion de las consolas-->
+
+<section id="loading" class="column content"> <!--Creacion de una seccion para la craga de los videojuegos-->
+<h1 class="Start">NEW GAME</h1> <!--Titulo que se mantendra en el recuadro-->
+</section> <!--Cierre de la seccion de la carga de videojuegos-->
+
+<script src="https://ajax.googlepis.com/ajax/libs/jquery/2.1.4/jquery.min.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#XB').on('click', function() {
+        $("#loading").load('PagJuegos/xbox.html');
+        return false;
+    });
+});
+
+$(document).ready(function() {
+    $('#PS').on('click', function() {
+        $("#loading").load('PagJuegos/playstation.html');
+        return false;
+    });
+});
+
+
+$(document).ready(function() {
+    $('#NS').on('click', function() {
+        $("#loading").load('PagJuegos/nintendo.html');
+        return false;
+    });
+});
+
+</script>
+
+</body> <!--Cierre del cuerpo de la pagina-->
+</html> <!--Cierre del documento HTML-->

@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--Funcion que permitr dar inicio a un documento HTML-->
+<html lang="en" dir="ltr"> <!--Atributo el cual permite indicar direccionarmente los elementos del texto en el documento HTML-->
+  <head> <!--Inicio de la cabecera de la pagina-->
+    <meta charset="utf-8"> <!--Atributo destinado a indicar codificaciones que se utilizan-->
+
+    <!--Atributo que permite trabajar el documento en el navegador-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+    <!--Atributos los cuales vincularan los documentos HTML con los CSS para dar diseño a la pagina-->
+    <link rel="stylesheet" href="css/EstIndex.css">
+    <link rel="stylesheet" href="css/Galeria.css">
+    <link rel="stylesheet" href="css/EfectoGaleria.css">
+    <link rel="stylesheet" href="css/EstiloMenu.css">
+    <title></title>
+  </head> <!--Cierre del encabezado de la pagina-->
+
+  <body class="PrinIndx"> <!--Cuerpo de la pagina la cual contiene una clase que trabajara el diseño en el archivo CSS-->
+
+  <ul class="BarraMenu mydiv animate-bg"> <!--Este atributo se establecera como la barra de menus para ir seleccionando-->
+  <li><h1 class="Enc1 TextCabz1">The Gamers Corp.</h1></li> <!--Funcion la cual sera el encabezado que contendra el nombre de la pagina-->
+  <li><a href="index.html">Inicio</a></li> <!--El siguiente encabezado sera el indice principal de la pagina-->
+  <li><a href="Registro.html">Registro</a></li> <!--Para este encabezado sera el registro de los clientes en la pagina-->
+  <li><a href="Tienda.html">Tienda</a></li> <!--Este encabezado sera para la tienda la cual nos muestra los juegos de cada consola-->
+  <li><a href="Noticias.html">Noticias</a></li> <!--Y por ultimo este encabezado es una seccion de noticias-->
+  <li><a href="Consultas.php">Consultas</a></li> <!--Para esta funcion se dara acciones para la manipulacion de la cuenta-->
+  <li><p class="Eslo">"Tu llevas el mando"</p></li> <!--Para este encabezado es una frase la cual caracteriza a la pagina-->
+</ul> <!--Cierre de la barra de menus-->
+
+  <br>
+
+  <div class="slider"> <!--Este apartado es la vista de la pagina la cual contendra imagenes alusivas a los videojuegso-->
+      <ul> <!--En este apartado contiene imagenes seleccionables con links directos a otras paginas para su verificacion-->
+        <li> <abbr title="VerMas"><a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/" target="_blank">
+          <img src="css/Recursos/Galeria/1.jpg" alt="Cyberpunk_2077"></a></abbr></li>
+        <li> <abbr title="VerMas"><a href="https://www.nvidia.com/es-la/geforce/graphics-cards/30-series/rtx-3090/" target="_blank">
+          <img src="css/Recursos/Galeria/2.jpg" alt="Rtx-3090"></a> <abbr title="VerMas"></li>
+        <li> <abbr title="VerMas"><a href="https://store.sony.com.mx/playstation5" target="_blank">
+          <img src="css/Recursos/Galeria/3.jpg" alt="PS5"></a> <abbr title="VerMas"></li>
+        <li> <abbr title="VerMas"><a href="https://www.origin.com/mex/es-mx/store/apex/apex" target="_blank">
+          <img src="css/Recursos/Galeria/4.jpg" alt="Apex-Legends"></a> <abbr title="VerMas"></li>
+      </ul> <!--Cierre de la vista principal de la pagina-->
+  </div>
+  <br>
+
+    <section class="ContenedorElements"> <!--En este apartado sera en contenido de algunos juegos que destacan-->
+      <!--Titulo en el que se muesra la informacion del recuadro de los juegos que esta contien la creacion de una tabla-->
+      <h2 class="PCS" >PC STEAM <img class="steam" src="css/Recursos/Img/Steam.png" alt="STEAM"><br> JUEGOS DESTACADOS</h2>
+
+      <table> <!--Inicion de una tabla-->
+        <tr>
+          <td>
+            <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+            esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+            <div class="Cont1">
+                  <img class="Re4" src="css/Recursos/Img/Re4.jpg" alt="ResidentEvil">
+                  <p class="TitRe4">Resident Evil 4</p>
+                  <p class="SinopsisRe4">
+                    ‎En ‎‎Resident Evil 4‎‎, el agente especial Leon S. Kennedy es enviado en una misión para rescatar
+                    a la hija del presidente de los Estados Unidos que ha sido secuestrada. Al encontrar su camino a
+                    un pueblo rural en Europa, se enfrenta a nuevas amenazas que son una desviación de los tradicionales
+                    enemigos zombies de las primeras entregas de la serie. Leon lucha contra nuevas criaturas horribles
+                    infestadas por una nueva amenaza llamada Las Plagas y se enfrenta a un grupo agresivo de enemigos,
+                    incluidos los aldeanos controlados por la mente que están vinculados a Los Illuminados, el misterioso
+                    culto que está detrás del secuestro.‎</p>
+                <a class="EnlacesBotones" href="https://store.steampowered.com/app/254700/Resident_Evil_4/" target="_blank">Ver Mas</a>
+                </div></td>
+          <td>
+            <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+            esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+            <div class="Cont2">
+              <img class="Halo" src="css/Recursos/Img/MCC.jpg" alt="Halo">
+              <p class="TitMCC">Halo: The Master Chief Collection</p>
+              <p class="SinopsisMCC">Por primera vez, llega a PC la serie que cambió nuestra forma de jugar en consola con seis títulos
+                increíbles en una experiencia épica, con lanzamientos periódicos y cada juego disponible de forma
+                individual. Incluye Halo: Reach, Halo: Combat Evolved Anniversary, Halo 2: Anniversary, Halo 3,
+                la campaña de Halo 3: ODST y Halo 4. Ahora optimizado para PC compatible con teclado y mouse,
+                características nativas para PC y hasta 4K UHD y HDR, es la colección que todos los fans de Halo
+                esperaban.</p>
+                <br>
+              <a class="EnlacesBotones" href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" target="_blank">Ver Mas</a>
+            </div>
+
+          </td>
+        </tr>
+
+      <tr>
+        <td>
+          <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+          esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+          <div class="Cont3">
+          <img class="Ghostrunner" src="css/Recursos/Img/Ghostrunner.jpg" alt="Ghostrunner">
+          <p class="TitGhostrunner">Ghostrunner</p>
+          <p class="SinopsisGhostrunner">Ghostrunner ofrece una experiencia única para un solo jugador con combates trepidantes y violentos,
+            además de una ambientación que combina la ciencia ficción con temas postapocalípticos. Descubre la historia de un mundo que ha
+            llegado a su fin y cuyos habitantes luchan por sobrevivir.</p>
+            <a class="EnlacesBotones" href="https://store.steampowered.com/app/1139900/Ghostrunner/" target="_blank">Ver Mas</a>
+          </div>
+        </td>
+
+        <td>
+          <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+          esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+          <div class="Cont4">
+            <img class="PUBG" src="css/Recursos/Img/PUBG.jpg" alt="PUBG">
+            <p class="TitPUBG">PLAYERUNKNOWN'S BATTLEGROUNDS</p>
+            <p class="SinopsisPUBG">Es un shooter de Battle Royale que enfrenta a 100 jugadores en una lucha por la supervivencia. Reúne suministros y burla a
+              tus oponentes para convertirte en la última persona en pie. PLAYERUNKNOWN, alias Brendan Greene, es un pionero del género battle royale y creador
+               de los modos de juego battle royale en la serie ARMA y H1Z1: King of the Kill.</p>
+            <a class="EnlacesBotones" href="https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/" target="_blank">Ver Mas</a>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+          <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+          esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+          <div class="Cont5">
+            <img class="NeedforSpeedHeat" src="css/Recursos/Img/NFSHEAT.jpg" alt="NeedforSpeedHeat">
+            <p class="TitNeedforSpeedHeat">Need for Speed™ Heat</p>
+            <p class="SinopsisNeedforSpeedHeat">Apúrate de día y arriésgalo todo de noche en Need for Speed™ Heat Deluxe Edition, un juego de carreras callejeras dinámico, donde las líneas
+              de la ley se desvanecen a medida que se pone sol.</p> <br>
+            <a class="EnlacesBotones" href="https://store.steampowered.com/app/1222680/Need_for_Speed_Heat/" target="_blank">Ver Mas</a>
+          </div>
+        </td>
+
+        <td>
+          <!--Atributo el cual manejara un espacio en la tabla que contiene la informacion de un juego,
+          esto a su vez mostrara la imagen del respectivo juego con un link para poder comprarlo-->
+          <div class="Cont6">
+            <img class="GTA5" src="css/Recursos/Img/GTA5.jpg" alt="GTA5">
+            <p class="TitGTA5">Grand Theft Auto V</p>
+            <p class="SinopsisGTA5">Grand Theft Auto V para PC ofrece a los jugadores la opción de explorar el galardonado mundo de Los Santos y el condado de Blaine con una resolución
+              de 4K y disfrutar del juego a 60 fotogramas por segundo.</p>
+            <a class="EnlacesBotones" href="https://store.steampowered.com/agecheck/app/271590/?l=spanish" target="_blank">Ver Mas</a>
+          </div>
+        </td>
+      </tr>
+    </table><!--Cierre de la tabla-->
+  </section><!--Cierre de la seccion de juegos destacados-->
+
+    <br><br>
+
+    <footer class="ContenedorElements"> <!--Atributo que establece el pie de pagina en cual contine una clase-->
+    <h1 class="PiePag"> © The Gamers Corp.</h1> <!--Titulo que estara recibiendo el pie de pagina en este caso un nombre ciertificado-->
+  </footer> <!--Cierre del pie de pagina-->
+
+     <div class="TitRedes"> <!--Este atributo es aquel que establecera una barra en la parte derecha de la pagina la cual contiene las redes socales de la pagina-->
+       Redes
+     </div> <!--Este apartado es la direccion de link de las redes sociales de la pagina youtube y twitch-->
+     <a href="https://www.youtube.com/channel/UCfYmFBdcbfdHiXvyTVu_QtQ" target="_blank"><img class="Redes" src="css/Recursos/Img/youtube.png" alt="youtube"></a>
+     <a href="https://www.twitch.tv/mschise" target="_blank"><img class="Redes2" src="css/Recursos/Img/twitch.png" alt="twitch"></a>
+  </body> <!--Cierre del cuerpo de la pagina-->
+</html> <!--Cierre del documento HTML-->

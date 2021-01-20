@@ -1,0 +1,264 @@
+<!DOCTYPE html><!--Funcion que permitr dar inicio a un documento HTML-->
+<html lang="en" dir="ltr"> <!--Atributo el cual permite indicar direccionarmente los elementos del texto en el documento HTML-->
+<head> <!--Inicio de la cabecera de la pagina-->
+  <meta charset="utf-8"> <!--Atributo destinado a indicar codificaciones que se utilizan-->
+
+  <!--Atributo que permite trabajar el documento en el navegador--><!--Atributo que permite trabajar el documento en el navegador-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+
+  <!--Atributos los cuales vincularan los documentos HTML con los CSS para dar diseño a la pagina-->
+  <link rel="stylesheet" href="css/EstiloNoticias.css">
+  <link rel="stylesheet" href="css/EstIndex.css">
+  <link rel="stylesheet" href="css/EfectoGaleria.css">
+  <link rel="stylesheet" href="css/EstiloMenu.css">
+  <title>NOTICIAS</title> <!--Titulo que recibe la pagina-->
+</head> <!--Cierre del encabezado de la pagina-->
+
+<body><!--Cuerpo de la pagina-->
+
+  <ul class="BarraMenu mydiv animate-bg"> <!--Este atributo se establecera como la barra de menus para ir seleccionando-->
+  <li><h1 class="Enc1 TextCabz1">The Gamers Corp.</h1></li> <!--Funcion la cual sera el encabezado que contendra el nombre de la pagina-->
+  <li><a href="index.html">Inicio</a></li> <!--El siguiente encabezado sera el indice principal de la pagina-->
+  <li><a href="Registro.html">Registro</a></li> <!--Para este encabezado sera el registro de los clientes en la pagina-->
+  <li><a href="Tienda.html">Tienda</a></li> <!--Este encabezado sera para la tienda la cual nos muestra los juegos de cada consola-->
+  <li><a href="Noticias.html">Noticias</a></li> <!--Y por ultimo este encabezado es una seccion de noticias-->
+  <li><a href="Consultas.php">Consultas</a></li> <!--Para esta funcion se dara acciones para la manipulacion de la cuenta-->
+  <li><p class="Eslo">"Tu llevas el mando"</p></li> <!--Para este encabezado es una frase la cual caracteriza a la pagina-->
+  </ul> <!--Cierre de la barra de menus-->
+
+
+  <section class="COLUMNAS MENUS"><!--Se realiza una seccion de colimnas y menus-->
+
+    <div  class="TABLEROS"><!--Nuevamente se crea un tablero-->
+      <meta charset="utf-8"> <!--Atributo destinado a indicar codificaciones que se utilizan-->
+
+      <title>Seccion De Noticias</title> <!--Titulo que recibira la pagina-->
+      <script type="text/javascript">
+          // determina el numero de pixeles que se moveran las noticias para
+          // cada iteracion en milisegundos de "speedjump"
+          var scrollspeed=1;
+          // determina la velocidad en milisgundos
+          var speedjump=30;
+          // segundos antes de empezar el movimiento
+          var startdelay= 1;
+          // posicion inicial superior en pixeles para cuando inicia
+          var topspace=-10;
+          // altura del marco donde se mostraran las noticias
+          // Si se modifica la altura del contenedor de las noticas hay que
+          // modificar tambien este valor
+          var frameheight=270;
+
+          // variable temporal que variara su valor en función de si estan las
+          // noticias en movimiento o paradas
+          current=scrollspeed;
+
+          /**
+           * Inicio del scroll
+           * Esta función es llamada en el body de la pagina.
+           * Tiene que recibir el id del scroll
+           */
+          function scrollStart()
+          {
+              dataobj = document.getElementById("scroll");
+              // tomamos la altura maxima de la capa de las noticias
+              alturaNoticias = dataobj.offsetHeight;
+              // posicionamos la capa del scroll en su posicion inicial
+              dataobj.style.top = topspace + 'px';
+
+              setTimeout("scrolling()", (startdelay * 1000));
+          }
+
+          /**
+           * Funcion que realiza el movimiento
+           */
+          function scrolling() {
+              // Restamos a la propiedad top de la capa el valor en pixeles
+              // establecido en la variable "scrollspeed", para hacer el
+              // movimiento hacia arriba.
+              dataobj.style.top = parseInt(dataobj.style.top) - scrollspeed + 'px';
+              // Si la capa ha sobrepasado la altura del area por donde se muestran
+              // las noticias ("alturaNoticias")
+              if (parseInt(dataobj.style.top) < alturaNoticias * (-1))
+              {
+                  // Posicionamos la capa en la parte inferior del recuadro, para
+                  // que simule que vienen las noticias de la parte inferior
+                  dataobj.style.top = frameheight + 'px';
+                  setTimeout("scrolling()", 0);
+              }else{
+                  setTimeout("scrolling()", speedjump);
+              }
+          }
+      </script> <!--Cierre del documento script-->
+  </head> <!--Cierre de la cabecera de la pagina-->
+
+  <body onLoad="scrollStart();"> <!--Cuerpo de la pagina que contendra las noticias mas relevantes-->
+
+  <div class="scrollWrapper" onMouseover="scrollspeed=0" onMouseout="scrollspeed=current"> <!--Creacion de tablero para las noticias-->
+      <div class="scrollTitle">LAS NOTICIAS MÁS COMENTADAS</div> <!--Titulo del tablero-->
+      <div id="scroll" > <!--Creacion de una id para su manejo-->
+
+         <!--Primera noticia en el tablero el cual contiene informacion, links, imagenes y diseño de tal-->
+          <div class="title">Primera Noticia</div>
+          <div class="content">Epic Games compra enorme complejo comercial para fundar su nueva sede. Las oficinas centrales de la compañía estarán listas para 2024 <br>El ascenso de Epic Games da cuenta de sus éxitos en el desarrollo de juegos,
+             software y herramientas creativas alcanzando resultados impresionantes como lo sucedido con Unreal Engine,
+             motor que se ha convertido en un estándar en la industria de los videojuegos. Esto significa que,
+             como compañía, ha crecido mucho y y cuenta con el capital suficiente para poner en marcha los más ambiciosos
+             proyectos y uno de ellos es la fundación de una nueva sede.</br>
+             <img src="css/Recursos/Noticias/noticia1.png" align="Shadow" height="200px" width="340px">
+          </div>
+
+          <!--Segunda noticia en el tablero el cual contiene informacion, links, imagenes y diseño de tal-->
+          <div class="title">Segunda Noticia</div>
+          <div class="content">¿El creador de Shadow of the Colossus mostrará su nuevo juego en 2021? Fumito Ueda prepara su próxima obra luego de The Last Guardian <br>A Fumito Ueda le han bastado 3 juegos para hacerse con un nombre en la industria
+            y para haber formado una legión de fans que esperan con ansias su próximo juego. La trayectoria creativa iniciada por ICO,
+            continuada por Shadow of the Colossus y perpetuada por The Last Guardian.</br>
+            <img src="css/Recursos/Noticias/noticia2.png" align="Shadow" height="200px" width="340px">
+            </div>
+
+            <!--Tercera noticia en el tablero el cual contiene informacion, links, imagenes y diseño de tal-->
+            <div class="title">Tercera Noticia</div>
+            <div class="content">Descubren el secreto final de NieR: Automata; te deja saltarte casi todo el juego
+            El truco se descubrió gracias cientos de horas de ingeniera inversa. <br>A poco más de un año del lanzamiento de NieR: Automata,
+              Yoko Taro y otros creativos del juego, aseguraron que aún había un secreto sin resolver en este título. Ahora, a poco de 4 años del lanzamiento original de NieR: Automata, se descubrió este último secreto.
+              Se trata de un truco que te deja saltarte casi todo el juego.</br>
+              <img src="css/Recursos/Noticias/noticia3.png" align="Shadow" height="200px" width="340px">
+              </div>
+
+              <!--Cuarta noticia en el tablero el cual contiene informacion, links, imagenes y diseño de tal-->
+              <div class="title">Cuarta Noticia</div>
+              <div class="content">God of War: Fallen God, el nuevo cómic de la franquicia, ya tiene fecha. La publicación será una precuela del más reciente título para PlayStation 4. <br>Los fans de God of War están emocionados, pues Santa Monica ya trabaja en una nueva entrega de la franquicia para PlayStation 5.
+                 El título está programado para debutar este año, pero todavía no tiene fecha de lanzamiento.</br>
+                 <img src="css/Recursos/Noticias/noticia4.png" align="Shadow" height="200px" width="340px">
+                </div>
+
+              <!--Quinta noticia en el tablero el cual contiene informacion, links, imagenes y diseño de tal-->
+              <div class="title">Proximos lanzamientos</div> <!--Este apartado nos indica lanzamiento proximos de juegos-->
+              <div class="content">Se muestran algunos de los proximos de juegos<a href="https://www.levelup.com/juegos"</a>
+              </div>
+              <br><img src="css/Recursos/Noticias/noticia5.png" align="Shadow" height="200px" width="340px"></br>
+              <br><img src="css/Recursos/Noticias/noticia6.png" align="Shadow" height="200px" width="340px"></br>
+              <br><img src="css/Recursos/Noticias/noticia7.png" align="Shadow" height="200px" width="340px"></br>
+              <br><img src="css/Recursos/Noticias/noticia8.png" align="Shadow" height="200px" width="340px"></br>
+              <br><img src="css/Recursos/Noticias/noticia9.png" align="Shadow" height="200px" width="340px"></br>
+              <br><img src="css/Recursos/Noticias/noticia10.png" align="Shadow" height="200px" width="340px"></br>
+
+            </a>
+    </div><!--Finaliza la clase tableros-->
+
+  </section> <!--Finaliza la seccion-->
+
+  <section id="Mostrar" class="COLUNAS CONTENIDO" ><!--CREAMOS UNA SECCION CON ID Y UNA CLASE LLAMADA COLIMNAS Y CONTENIDO
+  ADEMAS DE CONTENER EL FORNDO TRANSPARENTE-->
+<caption> <h2>DA CLICK EN EL TITULO PARA SABER MAS..</h2> </caption> <!--Creacion de una indicacion para el despliegue  de tareas-->
+<table><!--Creacion de una tabla para las noticias-->
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+      <a class="Enlaces" href="https://www.3djuegos.com/noticias-ver/210618/fall-guys-recibe-la-ultima-skin-tras-la-donacion-de-un/" target="_blank">
+      Fall Guys</a> <br>
+    <img class="ImagenesNote" src="css/Recursos/Noticias/img1.png" align="left" height="200px" width="250px">
+    <aside>
+      Los jugadores de Fall Guys: Ultimate Knockout ya tienen disponible un nuevo traje en el que gastar sus coronas.
+      Mediatonic ha introducido en el party-royale la última skin que prometió, tras la donación conjunta de un millón de dólares a una organización
+      benéfica por parte de Ninja, Mr. Beast, G2 Esports y Aim Lab. Tras introducir los tres primeros trajes, por fin le ha llegado el turno a Aim Lab.
+      Ya está disponible para su compra la skin completa, que consta de parte de arriba y de abajo, y cuesta en total 2 coronas (una corona por parte).
+      Eso sí, según ha comentado Mediatonic, la tienda del juego puede sufrir un error y solo veréis disponible una de las partes del traje. En principio,
+      y como ha informado el estudio, este fallo se debería corregir el lunes, en caso de que lo experimentéis.
+    </aside>
+    </td>
+  </tr>
+
+
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+      <a class="Enlaces" href="https://www.3djuegos.com/noticias-ver/210616/el-escritor-de-dying-light-2-ha-dejado-techland-pero-el/" target="_blank">Dying Light 2</a> <br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img2.png" align="left" height="200px" width="250px">
+      <aside>
+        Hace poco os contamos que el escritor y director de arte de Dying Light 2, Pawel Selinger, había abandonado Techland.
+    Toca hacer fe de erratas y matizar aquella noticia, ya que hubo cierta confusión en aquella información y en 3DJuegos queremos traeros
+     la información veraz. Techland se ha puesto en contacto con la prensa para aclarar esa noticia, que resultó no ser correcta del todo.
+     Según el estudio, efectivamente Pawel Selinger ha abandonado Techland como os contamos, pero él se encargó de diseñar la narrativa del
+     juego durante los dos últimos años; no era el director de arte. Al parecer, la confusión en dicha información viene porque él ostentaba
+     ese cargo antes, pero lo dejó hace tiempo. La dirección de arte está en manos de Eric Cochonneau desde 2019 y así va a seguir.
+      </aside>
+    </td>
+  </tr>
+
+
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+      <a class="Enlaces" href="https://www.3djuegos.com/noticias-ver/201804/no-te-pierdas-estos-11-ordenadores-tuneados-e-inspirados-en/" target="_blank">PC MODING</a> <br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img3.png" align="left" height="200px" width="250px">
+      <aside>
+        No existe una plataforma que brinde más opciones a sus usuarios que el PC. Los tiempos cambian, y actualmente no resulta extraño ver cómo los aficionados personalizan al máximo detalle las configuraciones de hardware,
+           ampliando y renovando diferentes componentes en aras de obtener los mejores resultados a la hora de disfrutar de los videojuegos. Pero la personalización no acaba ahí; diseñar el exterior de las torres se ha convertido en una
+           auténtica tendencia entre los usuarios más entusiastas. Se trata de una afición que no es apta para todos los bolsillos, que además de importantes inversiones requiere de paciencia y, sobre todo, de mucha imaginación.
+            Os invitamos a disfrutar de algunos diseños realmente alucinantes, con algunas propuestas dedicadas a juegos como Sekiro: Shadows Die Twice, DOOM o Resident Evil.
+      </aside>
+    </td>
+  </tr>
+
+
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+<a  class="Enlaces2" href="https://www.3djuegos.com/noticias-ver/210615/call-of-duty-black-ops-cold-war-se-prepara-para-recibir-mas/" target="_blank">Call of Duty Black Ops Cold War</a><br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img4.png" align="left" height="200px" width="250px">
+      <aside>
+        Los jugadores de la última entrega de la saga Call of Duty, el nuevo Call of Duty Black Ops Cold War, están de enhorabuena. Treyarch, estudio a cargo del videojuego, ha anunciado que introducirá muy pronto una nueva actualización cargada de contenido.
+               El título está siendo un éxito y, de hecho, estableció un nuevo récord en ventas digitales en la franquicia. CoD Black Ops Cold War recibirá el 14 de enero esta actualización de mitad de temporada y el mayor añadido probablemente sea el nuevo mapa "masivo" de Fireteam,
+             Sanatorium. También se agregará un nuevo modo de juego de Fireteam, el modo Dropkick 6v6. En él, tendremos que luchar "por el control de los códigos nucleares", y podremos hacerlo en el nuevo mapa.
+      </aside>
+    </td>
+  </tr>
+
+
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+<a class="Enlaces" href="https://www.3djuegos.com/noticias-ver/210614/rust-confirma-su-nuevo-exito-ha-generado-mas-de-1-millon-de/" target="_blank">Rust</a><br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img5.png" align="left" height="200px" width="250px">
+      <aside>
+        Desde que comenzó el 2021, uno de los videojuegos de los que más se habla en España y en la comunidad hispanohablante es Rust. El juego de Facepunch Studios siempre ha tenido un buen número de jugadores, pero ahora está viviendo una nueva vida,
+               gracias a que los principales streamers de nuestro país están jugando en Egoland, un servidor en el que están disfrutando todos juntos. Gracias a ello, y las retransmisiones en Twitch de esta serie, el interés por el juego ha crecido exponencialmente
+             en los últimos días y está siendo un éxito en la plataforma de streaming de Amazon. Era de esperar que este repunte en la popularidad se viera también reflejado en ventas e ingresos para el estudio, y efectivamente así ha sido, como ha compartido en Twitter
+             Garry Newman, fundador de Facepunch.
+      </aside>
+    </td>
+  </tr>
+
+
+  <tr  class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+      <a class="Enlaces2" href="https://www.3djuegos.com/noticias-ver/210605/counter-strike-global-offensive-elimina-a-los-bots-del-modo/" target="_blank">Counter Strike Global Offensive</a> <br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img6.png" align="left" height="200px" width="250px">
+      <aside>
+        Counter Strike Global Offensive es uno de los referentes del mundo de los esports y el panorama de los videojuegos competitivos. Lo es desde hace años y, aun así, Valve sigue actualizando el juego con nuevas opciones mediante actualizaciones.
+               Una de las últimas incluye cambios importantes que han dividido a la amplia comunidad del shooter. Concretamente, los responsables del juego han optado por eliminar a los bots de los modos competitivos de CS GO. De esta forma, si un compañero se va
+               de la partida o se aleja del teclado (lo que se conoce como AFK) no habrá una IA que lo sustituya y el equipo puede quedarse en inferioridad numérica, siendo un hecho que puede influir
+                   en el desarrollo de la partida. Hasta ahora, los bots compensaban dichas ausencias.
+      </aside>
+    </td>
+  </tr>
+
+
+  <tr class="ContenidosNote"> <!--Clase la cial diseñara la vista de cada noticia-->
+    <!--Seccion de una noticia que contiene la imagen la informaciony un link el cual puedes acceder a la info original-->
+    <td>
+<a class="Enlaces" href="https://www.3djuegos.com/noticias-ver/210601/los-combates-de-gotham-knights-no-seran-como-en-la-saga/" target="_blank">Gotham Knights</a> <br>
+      <img class="ImagenesNote" src="css/Recursos/Noticias/img7.png" align="left" height="200px" width="250px">
+      <aside>
+        Ya estamos en 2021 y eso significa que, si todo sigue según lo previsto, será el año en el que llegue Gotham Knights. Al menos, eso prometieron desde Warner Bros. Montreal, responsables de esta nueva propuesta basada en el universo DC. Ahora,
+               hemos conocido nueva información del proyecto por medio de una entrevista a sus desarrolladores publicada en el portal GamesRadar.
+               Como sabréis, el proyecto apostará por una vertiente cooperativa, pudiendo controlar a Batgirl, Robin, Nightwing y Red Hood. Eso hará que cambie sustancialmente el sistema de combate con respecto a la saga Arkham, y ese era uno de los aspectos mejor
+               valorados de los videojuegos basados en el Caballero Oscuro gracias a su sistema free-flow. El estudio canadiense confiesa que debe cambiar debido a la concepción cooperativa de la obra.
+      </aside>
+    </td>
+  </tr>
+</table> <!--Cierre de la abñla de noticias-->
+
+</body> <!--Cierre del cuerpo de la pagina-->
+</html> <!--Cierre del documento HTML-->
