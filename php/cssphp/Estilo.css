@@ -1,0 +1,164 @@
+/*Se importa una fuente externa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*Se llama la clase FondoXD*/
+.FondoXD{
+    background: #f2f2f2; /*Color de fondo*/
+    font-family: sans-serif; /*Tipo de fuente*/
+    font-size: 18px; /*Tamaño de fuente*/
+}
+
+/*Se llama la clase texto*/
+.Textos{
+  outline: none; /*Se quitan los contornos de los input text*/
+  font-family: 'Roboto', sans-serif; /*Tipo de fuente*/
+  font-size: 14px; /*Tamaño de fuente*/
+  width: 100%; /*Tamaño a lo largo*/
+  height: auto; /*Tamaño a lo ancho automatico*/
+  border: none; /*Se quitan los bordes*/
+  border-bottom: 2px solid #B9B9B9; /*Se agrega un borde en la parte baja*/
+  text-align: justify; /*Texto justificado*/
+  border-spacing: 100%; /*Espaciado del borde*/
+  background: transparent; /*Fondo transparente*/
+}
+
+/*Se llama la clase texto con la funcion hover*/
+.Textos:hover{
+  width: 100%;  /*Tamaño a lo largo*/
+  height: auto; /*Tamaño a lo ancho automatico*/
+  border: none; /*Se quitan los bordes*/
+  border-bottom: 2px solid #B9B9B9; /*Se agrega un borde en la parte baja*/
+  text-align: left; /*Texto alineado en la izquierda*/
+  border-spacing: 100%; /*Espaciado del borde*/
+  background: transparent; /*Fondo transparente*/
+}
+
+/*Se llama la clase texto con la funcion focus*/
+.Textos:focus{
+  width: 100%; /*Tamaño a lo largo*/
+  height: auto; /*Tamaño a lo ancho automatico*/
+  border-bottom: 2px solid #B9B9B9;  /*Se agrega un borde en la parte baja*/
+  text-align: left; /*Texto alineado en la izquierda*/
+  border-spacing: 100%; /*Espaciado del borde*/
+  background: transparent;} /*Fondo transparente*/
+
+/*Se llama a la funcion table*/
+table {
+  border-collapse: collapse; /*Borde de tablas colapsadas*/
+  width: 100%; /*Tamaño a lo largo*/
+}
+
+/*Se llama a la funcion th*/
+th{
+  border-right: 1px solid black;  /*Se agrega un borde en la parte derecha*/
+  text-align: center; /*Texto alineado al centro*/
+  padding: 8px; /*Distancia de los elementos*/
+  border-bottom: 1px solid #ddd; /*Se agrega un borde en la parte baja*/
+  }
+
+/*Se llama la clase td*/
+ td {
+   border-right: 1px solid black; /*Se agrega un borde en la parte derecha*/
+  text-align: justify; /*Texto justificado*/
+  padding: 8px; /*Distancia de los elementos*/
+  border-bottom: 1px solid #ddd; /*Se agrega un borde en la parte baja*/
+}
+
+/*Se llama la clase td con la funcion hover*/
+tr:hover {background-color:#dadedc;  /*Color de fondo*/
+}
+
+/*Se llama la clase BtnActualizar*/
+.BtnActualizar{
+  margin: auto; /*Margen automatico*/
+  padding: 12px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #fafafa; /*Color de texto*/
+  background-color: green; /*Color de fondo*/
+  border: none; /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+  margin-top: 200px; /*Margen hacia arriba*/
+  height: auto; /*Tamaño de lo ancho automatico*/
+  margin-left: 650px; /*Margen hacia la izquierda*/
+  margin-right: auto;/*Margen hacia la derecha*/
+}
+
+/*Se llama la clase BtnActualizar con funcion hover*/
+.BtnActualizar:hover{
+  color: #292B29; /*Color de texto*/
+  background-color: #26F60F ; /*Color de fondo*/
+}
+
+/*Se llama la clase BtnRegresar*/
+.BtnRegresar{
+  padding: 12px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #383838; /*Color de texto*/
+  background-color: #1AE5EF; /*Color de fondo*/
+  border: none; /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+  margin-left: 20px; /*Margen hacia la izquierda*/
+}
+
+/*Se llama la clase BtnRegresar con funcion hover*/
+.BtnRegresar:hover{
+  color: #fafafa; /*Color de texto*/
+  background-color: #0E41E3 ; /*Color de fondo*/
+}
+
+/*Se llama la clase Editar*/
+.Editar{
+  text-decoration:none; /*Se quita la decoracion a los hipervinculos*/
+  padding: 5px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #383838; /*Color de texto*/
+  background-color: #FF5704; /*Color de fondo*/
+  border: none; /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+}
+
+/*Se llama la clase Editar con funcion hover*/
+.Editar:hover{
+  text-decoration:none; /*Se quita la decoracion a los hipervinculos*/
+  padding: 5px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #E7E1DF;  /*Color de texto*/
+  background-color: #777777; /*Color de fondo*/
+  border: none; /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+}
+
+/*Se llama la clase Eliminar*/
+.Eliminar{
+  text-decoration:none; /*Se quita la decoracion a los hipervinculos*/
+  padding: 5px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #383838; /*Color de texto*/
+  background-color: #1AE5EF; /*Color de fondo*/
+  border: none; /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+}
+
+/*Se llama la clase Eliminar con funcion hover*/
+.Eliminar:hover{
+  text-decoration:none; /*Se quita la decoracion a los hipervinculos*/
+  padding: 5px; /*Distancia de los elementos*/
+  text-transform: uppercase; /*Texto transformado*/
+  color: #E7E1DF;  /*Color de texto*/
+  background-color: #EC1822; /*Color de fondo*/
+  border: none;  /*Se quitan los bordes*/
+  border-radius: 3px; /*Efecto circular  a los bordes*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra del elemento*/
+}
+
+/*Se llama la clase FondoXD*/
+ h1{
+   text-align: center; /*Texto alineado al centro*/
+   font-size: 24px; /*Tamaño de texto*/
+   font-family: 'Roboto', sans-serif; /*Tipo de fuente*/
+ }
