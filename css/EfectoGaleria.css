@@ -1,0 +1,38 @@
+.mydiv
+  {
+	position: relative;   /*Posición dependerá del lugar donde esté el codigo*/
+  background-color: rgba(0,0,0,0.8); /*Color de fondo azul*/
+  }
+
+.animate-bg:before, .animate-bg:after
+  {
+	content: '';   /*Contenido que va en dichas clases*/
+	position: absolute; /*Nos permite posicionar elementos de manera absoluta*/
+	left: -8px; /*Se toma como referencia el borde izquierdo en valor negativo*/
+	top: -8px;  /*Se toma como referencia el borde superior*/
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);  /*Fondo con degradado de colores*/
+	background-size: 300%;  /*Redimensión de la imagen de fondo*/
+	width: calc(100% + 16px); /*Margen de 16px y ancho de 100%*/
+	height: calc(100% + 16px);  /*Margen de 16 px y altura de 100%*/
+	z-index: -1; /*Nivel visual, orden en que los elementos se superponen*/
+	animation: BGgradient 15s ease infinite;   /*Animación degradado*/
+  }
+
+@keyframes BGgradient {  /*Control de la animación de fondo*/
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {   /*Control de efectos graficos de la animación de seguimiento*/
+	filter: brightness(1.4);   /*Brillo*/
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));  /*Sombra idéntica*/
+	filter: blur(15px); /*Grado de difuminado*/
+}

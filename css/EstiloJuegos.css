@@ -1,0 +1,128 @@
+body{background-image: url(../css/Recursos/Img/722742.png);} /*Imagen de fondo*/
+
+/*********************************XBOX*****************************************/
+.RecuadroX{
+  background-image: url(https://martincrownover.com/wp-content/uploads/2015/01/x1bg-logo-pattern-green.jpg);  /*Imagen de fondo*/
+}
+
+/******************************PLAYSTATION*************************************/
+.RecuadroP{
+  background-image: url(https://cdn.atomix.vg/wp-content/uploads/2015/03/PSSymbols_Plates_05.png);  /*Imagen de fondo*/
+}
+
+
+/********************************NINTENDO**************************************/
+.RecuadroN{
+  background-image: url(https://fsa.zobj.net/crop.php?r=lcqK5SK5aCMRqvp2o61VGpumkvSYSWZke_fwBaXTn8pTRRou31PRJjiuNXJsEs2wgIt1WDCZa_8Qpfbe08J67E9hD9i6pCzTLEYUOqUoV8ds5V_Jvem8f0_bwDoLs5wEH1Dnl5V0DLc31Xwf); /*Imagen de fondo*/
+}
+
+.carga{
+background-color: black;  /*Color de fondo*/
+color: White;  /*Color de texto*/
+font-size: 50px;  /*Tamaño de letra*/
+text-align:center;  /*Texto alineado al centro*/
+text-shadow: 4px 4px 4px Red;   /*Sombra difuminada en el texto*/
+font-family: 'Press Start 2P';  /*Tipografía*/
+}
+
+.ix:hover{
+	-webkit-transform: scale(2);  /*Escalamiento*/
+	transform: scale(2);  /*Escalamiento*/
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.ip:hover{
+	-webkit-transform: scale(2);  /*Escalamiento*/
+	transform: scale(2);  /*Escalamiento*/
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.in:hover{
+	-webkit-transform: scale(2);
+	transform: scale(2);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+
+.xx {
+  color: hsla(0, 0%, 0%, .9);  /*color de texto*/
+  font: normal 140px Varela Round, sans-serif;  /*Tipografía*/
+  height: 140px;  /*Altura*/
+  left: 0;  /*Posición zquierda*/
+  letter-spacing: 5px;  /*Espaciamiento de letras*/
+  margin: -80px 0 0 0;  /*Margen*/
+  position: absolute;  /*Posición absoluta*/
+  text-align: center;  /*Texto alineado al centro*/
+  text-transform: uppercase;  /*Texto en mayúsculas*/
+  top: 50%;   /*Parrafo al 50%*/
+  width: 100%;
+  animation: move linear 2000ms infinite; /*Repetición de animación*/
+}
+
+@keyframes move {  /*Animación en movimiento*/
+  0% {
+    text-shadow:  /*Texto sombreado*/
+      4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  25% {
+    text-shadow:  /*Texto sombreado*/
+      -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1),
+      -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1),
+      4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1),
+      2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1)
+    ;
+  }
+  50% {
+    text-shadow:   /*Texto sombreado*/
+      -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1),
+      -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1),
+      4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1),
+      2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+  75% {
+    text-shadow:   /*Texto sombreado*/
+      4px 4px 0 hsla(180, 100%, 50%, 1),
+      3px 3px 0 hsla(180, 100%, 50%, 1),
+      2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1),
+      -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1),
+      -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1)
+    ;
+  }
+  100% {
+    text-shadow:   /*Texto sombreado*/
+      4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1),
+      2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1),
+      -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+  }
+}

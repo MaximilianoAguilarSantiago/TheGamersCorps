@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Hanalei+Fill&family=Orbitron:wght@600&family=Press+Start+2P&family=Rye&family=Wallpoet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Hanalei+Fill&family=Orbitron:wght@600&family=Press+Start+2P&family=Rye&family=Wallpoet&display=swap');
+
+body{        /*Clase que conforma el cuerpo de la paguina*/
+  background-image: url(../css/Recursos/Img/722742.png);
+  font-family: sans-serif;
+}
+table { /*Clase marcada para la tabla de los jugadores*/
+margin-left: 101px;/*Movimiento que se dara hacia la izaquierda en el taxto*/
+padding: 20px;/*Margen creado entre el cuadro*/
+width: 80%;/*Es lo largo del margen*/
+height: 80%;/*Es lo largo que se le dara a la tabla en cuestion de la pagina*/
+}
+
+.column {/*Clase creada para los margenes*/
+    background: Black;
+    padding: 15px;/*Margen que existe entre el texto y el*/
+    margin: 10px;/*Tamaño del borde*/
+    border-radius: 4px;/*Radio que recibira las esquinas del margen*/
+}
+
+.menu {/*Clase que se le otorga a todo el menu*/
+    background-color: rgba(0,0,0,0.6);
+    width: 28%;/*es el tamaño que ocupara los margenes*/
+    float: left;/*Pocision que se le dara a los bordes en este caso izaquierda*/
+}
+
+.content {/*Clase para el contenido de los bordes*/
+  float: left;
+    width: 61%;/*Tamaño que recibiran*/
+}
+
+.Td{/*Clase creada para la mesa de las cartas*/
+  background: #1A9AA1  ;
+  padding: 15px;/*MArgen que existe entre el texto y el*/
+  margin: 7px;/*Tamaño del margen*/
+  border-radius: 4px;/*El margen tendra un radio es sus bordes*/
+}
+/**********************************BOTONES*************************************/
+button{margin-top: 10px;}  /*Margen superior*/
+
+.BX{
+  width: 85%;   /*Anchura*/
+  height: 30px;   /*Altura*/
+  border-radius: 4px;  /*Borde redondeado*/
+  font-size: 20px;   /*Tamaño de letra*/
+}
+.BX:hover{
+  color:white;  /*Color de letra*/
+  background-image: url(https://media1.tenor.com/images/06986c9de6c286d40750531efcbc7ddd/tenor.gif?itemid=14284716);  /*Fondo de imagen*/
+}
+/*Para el boton de formulario se le agrego diseño eñ cual cambia al momento de selleccionarlo*/
+.BP{
+  width: 85%;  /*Anchura*/
+  height: 30px;  /*Altura*/
+  border-radius: 4px;  /*Borde circular*/
+  font-size: 20px;  /*Tamaño de letra*/
+}
+.BP:hover{
+  color:white;  /*Color de texto*/
+  background-image: url(https://media1.tenor.com/images/06986c9de6c286d40750531efcbc7ddd/tenor.gif?itemid=14284716);  /*Imagen de fondo*/
+}
+
+.BN{
+  width: 85%;  /*Anchura*/
+  height: 30px; /*Altura*/
+  border-radius: 4px;  /*Borde redondeado*/
+  font-size: 20px;  /*Tamaño de letra*/
+}
+.BN:hover{
+  color:white;  /*Color de texto letra*/
+  background-image: url(https://media1.tenor.com/images/06986c9de6c286d40750531efcbc7ddd/tenor.gif?itemid=14284716);  /*Imagen de fondo*/
+}
+/******************************************************************************/
+
+.OP{
+text-align:center;  /*Texto alineado al centro*/
+text-shadow: 2px 4px 2px White;  /*Texto sombreado*/
+font-size: 40px;  /*Tamaño de letra*/
+font-family: 'Orbitron', sans-serif;  /*Tipografía*/
+}
+.Start{
+  color: White;  /*Color de texto*/
+  font-size: 50px;  /*Tamaño de letra*/
+  text-align:center;  /**Texto alineado al centro*/
+  text-shadow: 4px 4px 4px Red;  /*Texo sombreado*/
+  font-family: 'Press Start 2P';   /*Tipografía*/
+}
+
+.control{
+  float: right;   /*Flotante a la derecha*/
+  margin-right: 1000px;   /*Margen derecho*/
+}

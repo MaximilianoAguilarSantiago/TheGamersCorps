@@ -1,0 +1,179 @@
+body
+/*Cuerpo de toda la pagina del formulario*/
+{text-align: justify;  /*Alineación de texto justificado*/
+    background-image: url(Recursos/Img/fondo.jpg);  /*Imagen de fondo*/
+    background-size: cover;  /*Se mantiene la imagen de fondo sus proporciones*/
+    font-family:Arial, Helvetica, sans-serif; /*Tipografía*/
+    font-size:13px;  /*Tamaño de letra*/
+}
+
+
+textarea
+/*Caja de comentarios*/
+{
+    background: white;   /*Color de fondo*/
+    color: black;  /*Color de texto*/
+}
+
+#registrar
+/*Botón de Registrar, que carga los datos al servidor*/
+{
+    float:left;  /*Flotante izquierdo*/
+    width:80%;   /*Anchura*/
+    font-size:24px;  /*Tamaño de letra*/
+    font-weight: bold;  /*Texto en negrita*/
+    color: black;  /*Color de texto*/
+    text-align:right;   /*Texto alineado a la derecha*/
+}
+
+#envoltura
+{
+  margin-left: 550px;  /*Margen derecha*/
+  float: left;  /*Flotante a la izquierda*/
+  display:block;   /*Caja-Bloque*/
+  margin-right: auto;  /*Margen derecho automatico*/
+  width: 330px;  /*Anchura*/
+}
+
+
+#contenedor
+/*Diseño del encabezado y del pie de pagina*/
+{
+    background-color:red;  /*Color de fondo*/
+    text-shadow: 4px 4px 3px black;  /*Texto sombreado*/
+    -webkit-border-radius:5px;
+    -moz-border-radius:10px;
+    border-radius:10px;  /*Borde circular*/
+}
+
+#cabecera
+/*Encabezado del formulario*/
+{
+    border-bottom: 6px solid #333;  /*Borde en el marco*/
+    padding-top: 5px;  /*Relleno en la parte superir*/
+    height:70px;  /*Altura*/
+    line-height:50px;  /*Altura de la casilla */
+    text-align:center;  /*Texto alineado al centro*/
+    text-shadow: 3px 4px 2px black;  /*Texto sombreado*/
+    color: white;  /*Color de texto*/
+    font-size: 35px;  /*Tamaño de letra*/
+    font-family:fantasy; /*Tipografía*/
+}
+
+#cuerpo
+/*Contiene todos los elementos del formulario central*/
+{
+    background-color: rgb(100%, 88%, 88%);  /*Color de fondo*/
+    border:solid #84FFFF;  /*Borde solito*/
+    border-width: 2px 0;  /*Borde al ancho*/
+    padding:15px 35px;  /*Relleno en los 4 lados*/
+    background-image: url(Recursos/Img/formulario.jpg);  /*Imagen de fondo*/
+    background-size: cover;  /*Imagen de fondo, se mantiene en sus proporciones*/
+
+}
+label
+/*Etiqueta de texto*/
+{
+    color: white;  /*color de texto*/
+    font-weight: bold;  /*Texto en negrita*/
+    background: black;   /*Color de fondo*/
+}
+
+input
+/*Contenedores*/
+{
+    border-radius:5px;    /*Borde redondeado*/
+    box-shadow: 2px 2px 3px 1px rgba(0,0,0,.8);  /*Marco sombreado*/
+    font:bold 12px Arial, Helvetica, sans-serif;  /*Texto en negritas, Tipografía*/
+    height: 24px; /*Altura*/
+    line-height: 20px;  /*Altura del contenedor*/
+    padding:0 2px;  /*Relleno*/
+    width: 230px;  /*Anchura*/
+}
+
+input#usuario
+/*Coniene el usuario*/
+{
+    background:#ffc;  /*Color de fondo*/
+    padding-left: 25px;   /*Relleno a la izquierda*/
+}
+input#contrasenia
+/*Contiene la contraseña*/
+{
+    background:#ffc;  /*Color de fondo*/
+    padding-left: 25px;  /*Relleno izquierdo*/
+
+}
+
+.boton
+/*Botón de enviar*/
+{
+    background: #ccc;  /*Color de fondo*/
+    background: -webkit-linear-gradient(top,#fc6,#f63);  /*Color de fondo*/
+    background: linear-gradient(top,#fc6,#f63);/*Color de fondo degradado*/
+    color: black; /*Color de texto*/
+    width: 100px;  /*Anchura*/
+    margin: auto;   /*Margen automatico*/
+    display: block;  /*Caja-bloque*/
+    width: 55%;  /*Anchura*/
+}
+.boton:active
+/*Posición del botón*/
+{
+    position: relative;  /*Posición relativa*/
+    top: 4px;  /*Tamaño superior*/
+}
+
+#pie
+/*Pie del cuadro del formulario*/
+{
+    border-top: 3px solid #333;  /*Borde superior*/
+    color: white;  /*Color de texto*/
+    font-size: 20px;  /*Tamaño de texto*/
+    height: 35px;  /*Altura*/
+    line-height: 24px;  /*Altura del pie del formulario*/
+    text-align: center;  /*Texto alineado central*/
+}
+
+form,p{
+    margin:0;  /*Sin margen*/
+}
+
+p
+{
+    padding-bottom: 5px;  /*Fondo de relleno*/
+}
+
+p#bot
+{
+    padding-top: 10px;  /*Relleno superior*/
+}
+
+ul{text-align: center;  /*Texto alineado al centro*/
+  font-size: 20px;}  /*Tamaño de letra*/
+
+li{padding: 4px;}   /*Relleno de los 4 lados*/
+.contenedor{border: 4px solid white;  /*Borde de color*/
+  border-radius:10px; /*Borde redondeado*/
+  float: left;  /*Flotante izquierdo*/
+  display:block; /*Caja-bloque*/
+  margin-right: auto;  /*Margen derecho automatico*/
+  width: 330px; /*Anchura*/
+}
+
+.error{
+    background-color:red;  /*Color de fondo*/
+    text-shadow: 4px 4px 3px black; /*Texto sombreado*/
+    -webkit-border-radius:5px; /*Borde*/
+    -moz-border-radius:10px; /*Borde*/
+    border-radius:10px;  /*Borde circular*/
+    margin-top: 100px;  /*Margen superior*/
+    float: left;  /*Flotante a las izquierda*/
+    display:block;  /*Caja-bloque*/
+    margin-left: 20px;  /*Margen de la izquierda*/
+    margin-right: auto;  /*Margen derecho automatico*/
+    width: 330px;  /*Anchura*/
+    border-radius: 3px; /*Borde redondo*/
+    background: #ce1818; /*color de fondo*/
+    color: #fff;  /*color de texto*/
+}

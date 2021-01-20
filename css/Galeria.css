@@ -1,0 +1,40 @@
+.slider {
+	width: 1435px;  /*Anchura*/
+  height: 500px;   /*Altura*/
+	overflow: hidden;  /*Contenido recortado sin barras de posición*/
+  display:block;  /*Caja de bloque*/
+  margin-left: auto;  /*Margen izquierdo*/
+  margin-right: auto;  /*Margen derecho*/
+  border-bottom: 2px solid #dd214e;  /*color, estilo y ancho del borde inferior*/
+}
+.slider ul {
+	display: flex;  /*Bloque flexible*/
+	padding: 0;  /*Relleno en los 4 lados*/
+	width: 400%;  /*Anchura*/
+
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;   /*Anchura*/
+	list-style: none;  /*Ninguna lista alineada */
+}
+
+.slider img {
+	width: 100%;    /*Anchura*/
+}
+
+@keyframes cambio {    /*Control en la animación*/
+	/*Valores en margenes izquierdos*/
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

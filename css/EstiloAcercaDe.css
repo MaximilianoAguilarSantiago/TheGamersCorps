@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');  /*Tipografía Roboto*/
+
+body{ background-image: url(Recursos/Img/Opt3.jpg);  /*Imagen de fondo*/
+      background-size: cover;  /*Se mantiene la proporción de la imagen*/
+  }
+
+.Interno{
+  margin-top: 10px;   /*Margen superior*/
+  background-color: rgba(0,0,0,0.6);}  /*Color de fondo azulado*/
+
+  /*columnas*/
+  .Cajas {
+      margin: 5px;/*Margen alrededor*/
+      border-radius: 4px;/*efecto circular a los bordes*/
+  }
+
+  /*Menus*/
+  .Contenidos {
+      width: 25%;/*altura*/
+      float: left;/* flotamiento hacia la izquierda*/
+  }
+
+  /*Clase content*/
+  .MisRegistrios {
+      padding: 10px;  /*Espacio de relleno para los 4 lados*/
+      width: 72%;/*anchura*/
+      float: right;/* Flotamiento hacia la derecha*/
+  }
+
+  caption{
+    height: auto;  /*altura automatica*/
+    display:block;  /*Elemento de Bloque*/
+    margin-left: auto;   /*Margen izquierdo*/
+    margin-right: auto;}   /*Margen derecho*/
+
+b{
+  font-family: 'Roboto', sans-serif;  /*Tipografía (tipo de fuente)*/
+  text-align: center;  /*Texto alineado al centro*/
+  font-size: 24px;  /*Tamaño de letra*/
+  background-color: rgba(94, 86, 85, 0.1);  /*Color de fondo*/
+  height: auto; /*altura automatica*/
+  display:block; /*Elemento de bloque*/
+  margin-left: auto;   /*Margen izquierdo automatico*/
+  margin-right: auto;  /*Margen derecho automatico*/
+}
+
+
+table {
+  font-family: 'Roboto', sans-serif;  /*Tipografría*/
+  background-color: rgba(51, 47, 46, 0.1); /*Color de fondo*/
+  border-collapse: collapse;  /*Fusión de bordes*/
+  width: 100%;  /*Anchura*/
+}
+
+th{
+
+  text-align: center;  /*Texto alineado al centro*/
+  padding: 8px;  /*Relleno por los 4 lados*/
+  border-bottom: 1px solid #ddd;  /*Propiedades individuales del elemento*/
+  }
+
+ td {
+  text-align: justify;  /*Texto alineado justificado*/
+  padding: 8px;  /*Relleno en los 4 lados*/
+  border-bottom: 1px solid #ddd;   /*Propiedades individuales del elemento*/
+}
+
+tr:hover {background-color:#8DD0EE ;} /*Color de fondo al desplazar el cursor*/
+
+
+a{text-decoration: none;}  /*Ningun formato de texto*/
+
+.Modifi {
+  font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  text-decoration:none;  /*Ningun formato de texto*/
+  padding: 5px;   /*Relleno de los 4 lados*/
+  text-transform: uppercase;  /*Texto en mayusculas*/
+  color: #EEF8EF;  /*Color de texto*/
+  background-color: #434041;  /*Color de fondo*/
+  border: none;   /*Sin borde*/
+  border-radius: 3px;  /*Redondeo de borde */
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4); /*Sombra difuminada*/
+  margin-left: 148px;  /*Margen izquierdo*/
+}
+
+.Modifi:hover{
+  color: #EEF8EF  ;  /*Color de texto*/
+  background-color: #FE0444;  /*Color de fondo*/
+  }
+
+h1{
+    text-align: center;  /*Texto alineado al centro*/
+    font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  }
+
+.BtnBorrarT{
+  font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  padding: 12px;  /*Relleno en los 4 lados*/
+  text-transform: uppercase;    /*Texto en mayúsculas*/
+  color: #fafafa;  /*Color de texto*/
+  background-color: #434041;  /*Color de fondo*/
+  border: none;  /*Sin borde*/
+  border-radius: 3px;   /*Borde redondeado*/
+  box-shadow: 1px 1px 10px rgba(50,50,50,.4);   /*Sombra difuminada*/
+  margin-left: 88px;  /*Margen izquierdo*/
+}
+
+.BtnBorrarT:hover{
+  background-color: #FE0444;  /*Color de fondo*/
+}

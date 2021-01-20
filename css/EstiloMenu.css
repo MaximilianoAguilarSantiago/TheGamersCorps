@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.BarraMenu{
+	margin-top: 10px;  /*Margen superior*/
+	font-family: 'Roboto', sans-serif;  /*Tipografía*/
+	text-align:center;  /*Texto alineado*/
+	list-style: none;  /*Sin ningun estilo de lista*/
+	padding: 0;  /*Sin ningun relleno*/
+	background-color: rgba(0,0,0,0.8);  /*Color de fondo*/
+}
+
+.BarraMenu li{
+	text-align: left;  /*Texto alineado a la izquierda*/
+	display:inline-block;  /*Cajas de bloque en linea*/
+}
+
+.BarraMenu li a{
+	text-decoration: none;  /*Sin decoración de texto */*/
+	color: white;   /*Color de texto blanco*/
+	padding: 20px;  /*Relleno en los 4 lados*/
+	display: block;  /*Caja de Bloque*/
+	font-size: 30px;  /*Tamaño de letra*/
+}
+
+.BarraMenu li a:hover{
+	background: #dd214e;  /*Color de fondo*/
+}

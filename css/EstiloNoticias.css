@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{background-image: url(Recursos/Img/Noti3.jpg);
+  background-size: cover;
+}
+
+
+/*CODIGOS DE MENUS*/
+.MENUS {
+    width: 26%;/*INDICA LA ALTURA*/
+    float: left;/* REALIZA EL FLOTAMIENTO HACIA LA IZQUIERDA*/
+}
+
+
+/*CODIGO DE LAS COLUNAS*/
+.COLUNAS {
+    margin: 10px;/*INDICA EL MARGEN AL REDEDOR*/
+    border-radius: 4px;/*MUESTRA EL EFECTO DE CIRCULAR LOS BORDES*/
+}
+
+
+/*CLASE TABLEROS*/
+.TABLEROS{
+  padding: 9px;/*DISTACIONA DE LOS ELEMENTOS A LOS BORDES*/
+  margin: 7px;/*INDICA LOS PIXELES DEL MARGES DE ALREDEDOR*/
+  border-radius: 4px;/*ES EL EFECTO PARA CIRCULAR LAS ESQUINAS*/
+}
+
+/*CLASE CONTENIDO*/
+.CONTENIDO {
+    background-color: rgba(79, 73, 73, 0.4);
+    padding: 10px;/*DISTACIONA DE LOS ELEMENTOS A LOS BORDES*/
+    width: 65%;/*INDICA LA ALTURA*/
+    margin-left: 50px;
+    float: left;
+}
+
+/*CLASES DE LOS BOTONES*/
+/*CLASE DEL BOTON HORARIO*/
+.NOTICIAS{
+  margin-left: 94px; /*INDICA EL MARGEN A LA IZQUIERDA*/
+  font-family: cursive; /*INDICA EL TIPO DE FUENTE*/
+  color:lime; /*INDICA EL SOLOR DEL TEXTO*/
+  font-size: 20px; /*INDICA EL TAMAÑO DEL TEXTO*/
+  background: black; /*INDICA EL COLOR DE FONDO*/
+  border-color: black; /*INDICA EL COLOR DEL BORDE*/
+  width: 194px; /*INDICA EL TAMAÑO A LO LARGO*/
+  height: 40.4px; /*INDICA EL TAMAÑO A LO ANCHO*/
+  border-radius: 6px;/*MUESTRA EL EFECTO CIRCULAR DE LOS BORDES*/
+    }
+
+.content{
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+}
+
+    /*mini apartado de LAS NOTICIAS MÁS COMENTADAS*/
+    .scrollWrapper   {
+        width:350px;  /*Anchura*/
+        height:370px;  /*Altura*/
+        overflow:hidden;  /*Se recorta contenido, y no existe barra de posición*/
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  /*Sombra en el marco*/
+        font-family:Arial; /*Tipografía*/
+        font-size:0.8em;  /*Tamaño de letra*/
+    }
+    .scrollTitle {
+        background-color:black;  /*Color de fondo*/
+        color:#fff;  /*Color de texto*/
+        padding:5px;  /*Relleno en los 4 lados*/
+        font-weight:bold;   /*Texto en negrita*/
+        text-align:center;  /*Texto alineado al centro*/
+    }
+    #scroll    {
+        position:relative;  /*Posición relativa*/
+        width:auto;  /*Anchura*/
+        margin:1px;  /*Margen*/
+        z-index: -1;  /*Orden del elemento posicionado*/
+        padding:5px;    /*Relleno de 5 pixeles por los 4 lados*/
+    }
+    #scroll .title  {
+      font-weight:bold;    /*Texto en negrita*/
+      margin-top:20px;   /*Margen superior*/
+    }
+    .class {
+      font-weight: bold;   /*Texto en negritas*/
+    }
+
+
+h2{
+color: #F800FF;  /*Color de texto*/
+font-size: 30px;   /*Tamaño de letra*/
+text-shadow: 2px 4px 2px black;   /*Sombreado de texto*/
+text-align: center;  /*Texto alineado al centro*/
+font-family: 'Roboto', sans-serif;   /*Tipografía*/
+}
+
+
+table
+{
+  width: 100%;  /*Anchura*/
+}
+
+td{
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  /*Sombre en el marco*/
+}
+
+td:hover{
+  background-color: rgba(233, 233, 233, 0.5);  /*Color de fondo*/
+}
+
+.ImagenesNote{
+  margin-right: 8px;   /*Margen derecho*/
+  float: left;   /*Flotante a la izquierda*/
+  border-radius: 5px;  /*Borde redondeado*/
+  }
+
+.Enlaces{
+    margin-left: 420px;  /*Margen izquierdo*/
+    color: White;   /*Color de texto*/
+    font-size: 30px;   /*Tamaño de letra*/
+    text-decoration: none;  /*Texto sin decoración*/
+    font-family: 'Roboto', sans-serif;   /*Tipografía*/
+}
+
+.Enlaces:hover{
+    margin-left: 420px;  /*Margen izquierdo*/
+    color: #00FFFD;  /*Color de texto*/
+    text-shadow: 2px 4px 2px black;  /*Sombreado de texto*/
+    font-size: 30px;   /*Tamaño de letra*/
+    text-decoration: none;  /*Texto sin decoración*/
+    font-family: 'Roboto', sans-serif;  /*Tipografía*/
+}
+
+
+.Enlaces2{
+    margin-left: 300px;  /*Margen izquierdo*/
+    color: White;   /*Color de texto blanco*/
+    font-size: 30px;   /*Tamaño de letra*/
+    text-decoration: none;   /*Sin decoración de texto*/
+    font-family: 'Roboto', sans-serif;  /*Tipografía*/
+}
+
+.Enlaces2:hover{
+    margin-left: 300px;   /*Margen izquierdo*/
+    color: #00FFFD;   /*Color de texto*/
+    text-shadow: 2px 4px 2px black;  /*Texto sombreado*/
+    font-size: 30px;   /*Tamaño de texto*/
+    text-decoration: none;   /*Sin decoración de texto*/
+    font-family: 'Roboto', sans-serif;  /*Tipografía*/
+}
+
+aside{
+  font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  text-align: justify;}   /*Alineación de texto justificado*/

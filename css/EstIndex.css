@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');   /*Fuente/Tipografía importada Comfortaa*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');  /*Fuente/Tipografía importada Roboto*/
+
+.PrinIndx{
+background-image: url(Recursos/Img/Principal.jpg);  /*Imagen de fondo*/
+background-size: cover;  /*Mantener las proporciones de la imagen de fondo*/
+}
+
+.Cabz1{background-color: rgba(0,0,0,0.6);  /*Color de fondo*/
+
+ }
+
+.TextCabz1{
+  color: White; /*Color de texto*/
+  text-align: center;  /*Texto alineado al centro*/
+  padding: 2px;  /*Relleno de los 4 lados*/
+}
+
+a{	color: White;}
+.Enc1{
+
+  font-size: 30px;  /*Tamaño de la letra*/
+  font-family: 'Comfortaa';  /*Tipografía*/
+  text-shadow: 2px 5px 2px #C70039;  /*Texto sombreado*/
+}
+
+.Eslo{
+  color: white;  /*Color de texto*/
+  font-family: 'Comfortaa';  /*Tipografía */
+  font-style: oblique;  /*Fuente de estilo*/
+  font-size: 30px;  /*Tamaño de letra*/
+}
+
+.PCS{
+  color: White;  /*Color de texto*/
+  font-size: 60px;  /*Tamaño de letra*/
+  text-shadow: 2px 4px 2px #007AFF;  /*Texto sombreado*/
+  font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  text-align: center;  /*Texto alineado al centro*/
+}
+
+.steam{width: 4%;}  /*anchura*/
+
+/**Contenedor***/
+.ContenedorElements{
+  padding: 4px;  /*Relleno en los 4 lados del contenedor*/
+  background-color: rgba(0,0,0,0.8);  /*Color de fondo */
+  width: 95%; /*Anchura*/
+  height: auto;  /*Altura*/
+  display:block; /*Caja-bloque*/
+  margin-left: auto;  /*Margen izquierdo automatico*/
+  margin-right: auto;  /*Margen derecho automatico*/
+}
+
+td{
+width: 750px;  /*Anchura*/
+margin: 10px; /*Margen*/
+}
+
+/***Contenido 1****/
+.Cont1{  font-family: 'Roboto', sans-serif;} /*Tipografía*/
+
+.Cont1:hover{background-color: rgba(38, 135, 242,0.2);}  /*Color de fondo*/
+
+.TitRe4{
+  color: white;  /*Color de letra*/
+  font-size: 20px;  /*Tamaño de letra*/
+  text-align: center;  /*Texto alineado al centro*/
+}
+
+.SinopsisRe4{
+  color: white;  /*color de texto*/
+  text-align: justify;  /*Texto alineado justificado*/
+  padding: 4px; /*Relleno en los 4 lados*/
+}
+
+.Re4{
+  margin: auto;  /*Margen automatico*/
+  display: block;  /*Caja-bloque*/
+  width: 55%;  /*Anchura*/
+}
+
+.EnlacesBotones{
+  margin: 4px;  /*Margen*/
+  padding: 4px;  /*Relleno de los 4 lados*/
+  font-size: 24px;  /*Tamaño de texto*/
+  width: 150px;  /*Anchura*/
+  height: 35px;  /*Altura*/
+  color: White;  /*Color de texto*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+  background: #252a34;  /*Color de fondo*/
+  height: auto;  /*Altura automatica*/
+  display:block;  /*Caja-Bloque*/
+  margin-left: auto;  /*margen izquierdo automatico*/
+  margin-right: auto; /*margen derecho automatico*/
+  text-decoration: none; /*Sin decoración de texto*/
+  text-align: center; /*Texto alineado al centro*/
+  border-radius: 4px; /*Borde redondeado*/
+}
+
+.EnlacesBotones:hover{
+  background: #dd214e; /*Color de fondo*/
+}
+
+/***Contenido 2****/
+.Cont2{font-family: 'Roboto', sans-serif;} /*Tipografía*/
+
+.Cont2:hover{background-color: rgba(255, 247, 0,0.2);} /*Color de fondo*/
+
+.Halo{
+  margin: auto;  /*Margn automatico*/
+  display: block; /*Caja-Bloque*/
+}
+
+.TitMCC{
+  color: white;  /*Color de texto*/
+  font-size: 20px;  /*Tamaño de letra*/
+  text-align: center;  /*Texto alineado al centro*/
+}
+
+.SinopsisMCC{
+  color: white; /*Color de texto en blanco*/
+  text-align: justify; /*Texto alineado y justificado*/
+  padding: 4px; /*Relleno en los 4 lados*/
+}
+
+/***Contenido 3****/
+.Cont3{
+  color: White; /*Color de texto*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+}
+
+.Cont3:hover{background-color: rgba(255, 0, 227,0.2);} /*Color de fondo*/
+
+.TitGhostrunner{
+  font-size: 20px; /*Tamaño de letra*/
+  text-align: center; /*Texto alineado al centro*/
+}
+
+.SinopsisGhostrunner{
+  color: white; /*Color de texto*/
+  text-align: justify; /*Texto alineado y justificado*/
+  padding: 4px; /*Relleno en los 4 lados*/
+}
+
+.Ghostrunner{
+  margin: auto; /*Margen automatico*/
+  display: block;} /*Caja-Bloque*/
+
+/***Contenido 4****/
+
+.Cont4{
+  color: White; /*Color de texto*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+}
+
+.Cont4:hover{background-color: rgba(255, 0, 0,0.2);} /*Color de fondo*/
+
+.TitPUBG{
+  font-size: 20px; /*Tamaño de letra*/
+  text-align: center; /*Texto alineado al centro*/
+}
+
+.SinopsisPUBG{
+  color: white; /*Color de texto*/
+  text-align: justify; /*Texto alineado y justificado */
+  padding: 4px; /*Relleno en los 4 lados*/
+}
+
+.PUBG{ /*juego*/
+  margin: auto; /*margen automatico*/
+  display: block;} /*caja-bloque*/
+
+/***Contenido 5****/
+
+.Cont5{  color: White; /*Color de texto*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+}
+
+.Cont5:hover{background-color: rgba(183, 0, 236,0.2);} /*color de fondo*/
+
+.TitNeedforSpeedHeat{
+  font-size: 20px; /*Tamaño de letra*/
+  text-align: center; /*Texto alineado al centro*/
+}
+
+.SinopsisNeedforSpeedHeat{
+  color: white; /*Color de texto*/
+  text-align: justify; /*Texo alineado y justificado*/
+  padding: 4px; /*Relleno de los 4 lados*/
+}
+
+.NeedforSpeedHeat{ /**/
+  margin: auto; /*Margen automatico*/
+  display: block; /*Caja-bloque*/
+}
+
+/***Contenido 6****/
+.Cont6{  color: White; /*Color de texto*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+}
+
+.Cont6:hover{background-color: rgba(12, 241, 0,0.2);} /*color de fondo*/
+
+.TitGTA5{ /*Titulo del juego*/
+  font-size: 20px; /*Tamaño de letra*/
+  text-align: center; /*Texto alineado al centro*/
+}
+
+.SinopsisGTA5{ /*Sinopsis del juego*/
+  color: white; /*Color de texto*/
+  text-align: justify; /*Texto justificado */
+  padding: 4px; /*Relleno de los 4 lados*/
+}
+
+.GTA5{ /*Juego GTA5*/
+  margin: auto; /*Margen automatico*/
+  display: block; /*Caja-bloque*/
+}
+
+
+/****Pie de Pagina*****/
+
+.TitRedes{ /*Clase redes*/
+  font-family: 'Roboto', sans-serif;  /*Tipografía*/
+  color: white; /*Color de texto*/
+  background-color: rgba(29, 29, 29,0.8); /*Color de fondo*/
+  width:48px;  /*anchura*/
+  position:fixed; /*Posición flexible*/
+  top:120px; /*Alejamiento de la parte superior*/
+  right:0; /*Alejamiento de la parte derecha*/
+}
+
+.Redes{  /*Youtube*/
+  width:48px; /*Anchura*/
+  position:fixed; /*Posición flexible*/
+  top:160px; /*Alejamiento de la parte superior*/
+  right:0;} /*Alejamiento de la parte derecha*/
+
+.Redes2{ /*Twitch*/
+  width:48px; /*Anchura*/
+  position:fixed; /* Posición flexible*/
+  top:230px; /*Alejamiento de la parte superior*/
+  right:0;} /*Alejamiento de la parte derecha*/
+
+.PiePag{ /*Pie de pagina*/
+  text-align: center; /*Texto alineado al centro*/
+  color: white; /*color de letra*/
+  font-family: 'Roboto', sans-serif; /*Tipografía*/
+}
